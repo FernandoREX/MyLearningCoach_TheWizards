@@ -103,7 +103,7 @@ THIS IS NOT LINK
 
 
 ## Credits The Wizards
--Fernando Rosas Gomez: https://github.com/FernandoREX
+- Fernando Rosas Gomez: https://github.com/FernandoREX
 - Sandra Fabiola Morales: https://github.com/FabiMateosCat
 - Merly Guadalupe Jimenez:
 - Carlos Aldair Guzman: https://github.com/AldairModesto
