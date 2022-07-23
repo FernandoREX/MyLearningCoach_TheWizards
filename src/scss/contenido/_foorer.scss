@@ -1,0 +1,67 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+.footer{
+    padding-top: 7rem;
+    background-color: Variables.$Rosa;
+    padding-bottom: 2rem;
+    text-align: center;
+    p{
+        color: Variables.$Blanco;
+    }
+}
+
+@include Mixins.Tablet {
+    .empresas{
+        display: flex;
+        gap: 10rem;
+        h3{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            margin-bottom: 3rem;
+        }
+        margin-bottom: -10rem;
+    }
+    
+}
+
+.empresas{
+    h3{
+        color: Variables.$Blanco;
+    }
+}
+
+@include Mixins.Especial {
+    .inf{
+        margin-top: 7rem;
+        display: flex;
+        align-items: center;
+        gap: 70rem;
+        padding-bottom: 5rem;
+        img{
+            width: 20rem;
+        }
+    }
+}
+.inf{
+    img{
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        width: 30rem;
+        margin: 4rem auto;
+    }
+    
+    a{
+        background-color: Variables.$AzulP;
+        padding: 2rem;
+        border-radius: 1rem;
+        color: Variables.$Blanco;
+    }
+    .tc{
+        margin-top: 3rem;
+    }
+}
+
+

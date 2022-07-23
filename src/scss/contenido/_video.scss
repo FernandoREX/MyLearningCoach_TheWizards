@@ -1,0 +1,45 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+.Principal{
+    margin-top: 7rem;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@include Mixins.Tablet {
+    .Video__titulo{
+        h1{
+            font-size: 7rem;
+        }
+    }
+}
+
+.Video__titulo
+{
+    color: Variables.$Blanco;
+    font-size: 6.55rem;
+    text-align: center;
+}
+
+@include Mixins.TelefonoPequeño {
+    .Video__titulo{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.Video__video{
+    video{
+        border-radius: 5rem;
+    }
+}
+
+.Video__descripcion{
+    p{
+        margin-top: 7rem;
+        color: Variables.$Blanco;
+    }
+}

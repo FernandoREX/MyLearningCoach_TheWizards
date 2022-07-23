@@ -1,0 +1,44 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+main{
+    background: rgb(98,14,235);
+    background: linear-gradient(0deg, rgba(98,14,235,1) 0%, rgba(41,158,191,1) 100%);
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio__img{
+    margin: 0 auto;
+}
+
+.inicio__datos{
+    margin: 0 auto;
+    img{
+        width: 20rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        border-radius: 50rem;
+    }
+    color: Variables.$Blanco;
+}
+
+.campoC{
+    input{
+        background-color: Variables.$AzulP;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+
+@include Mixins.TabletP {
+    .inicio__img{
+        display: none;
+    }
+}

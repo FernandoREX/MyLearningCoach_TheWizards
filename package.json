@@ -1,0 +1,21 @@
+{
+  "name": "calmecac_",
+  "version": "1.0.0",
+  "description": "Proyecto creado para el track \"My Learning Coach\" en el Talent Hackathon 2022, con el apollo de la empresa \"HCL\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss:build/css"
+  },
+  "keywords": [
+    "SASS",
+    "gulp"
+  ],
+  "author": "The Wizards",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
+  }
+}

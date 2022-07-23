@@ -1,0 +1,223 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmecac</title>
+
+    <script src="https://kit.fontawesome.com/10644d5fcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;400;700&family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-----------------------Header----------------------->
+    <div class="colorHh">
+        <header class="header contenedor" id="header" >
+            <div>
+                <div class="Navegacion">
+                    <div class="NavegacionImg">
+                        <a href="index.html"><img src="img/LogoLetras.png" alt="Logo de Calmecac"></a>
+                    </div>
+                    <nav class="NavegacionNav" id="Nav">
+                        <ul>
+                            <li><a href="inicio.html" class="NavegacionNav__enlace">Mi Perfíl</a></li>
+                            <li><a href="error404.html" class="NavegacionNav__enlace">Mis Profesores</a></li>
+                            <li><a href="error404.html" class="NavegacionNav__enlace">Tutorias</a></li>
+                            <li><a href="index.html" class="NavegacionNav__enlace">Cerrar Sesión</a></li>
+                            <li><a href="galeria.html" class="NavegacionNav__enlace">Logros y Avatares</a></li>
+                        </ul>
+                    </nav>
+    
+                    <div onclick="mostrar_menu()" class="btn__menu" id="btn_menu" ><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+        </header> 
+    </div><!-----------------------Fin Header----------------------->
+
+    <main class="MAIN recorte">
+        <div class="contenedor colorTexto">
+            <div class="Textos">
+                <h2>!Hola!, Fernando</h2>
+                <p>Bienvenido a la galaria y guia de logros de Calmecac</p>
+                <p>Consiguir logros aumenta la estetica de tu avatar 🧙‍♂️</p>
+            </div>
+            <div class="Carrucel">
+                <h2>Avatares que podrias conseguir</h2>
+                <div class="grande">
+                    <div class="materias">
+                        <div class="Clase1">
+                            <img src="img/niña1.png" alt="Avatar basico de niña">
+                        </div>
+                        <div class="Clase1">
+                            <img src="img/niño1.png" alt="Avatar basico de niño">
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <img src="img/niña1gorra.png" alt="Avatar basico de niña">
+                        </div>
+                        <div class="Clase1">
+                            <img src="img/niño1gorra.png" alt="Avatar basico de niño">
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <img src="img/niña1wizard.png" alt="Avatar basico de niña">
+                        </div>
+                        <div class="Clase1">
+                            <img src="img/niño1wizard.png" alt="Avatar basico de niño">
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <img src="img/niña11.png" alt="Avatar basico de niña">
+                        </div>
+                        <div class="Clase1">
+                            <img src="img/niño9.png" alt="Avatar basico de niño">
+                        </div>
+                    </div>
+                </div>
+                <ul class="puntos">
+                    <li onclick="deslizaAtras()" id="Atras" class="punto"></li>
+                    <li onclick="deslizaAdelante()" id="Adelante" class="punto"></li>
+                </ul>
+            </div>
+            <div class="CarrucelClases">
+                <h2>Cosmeticos para tu avatar</h2>
+                <div class="grandeC">
+                    <div class="materiasC">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Astro Traje</h2>
+                            <img src="img/astronauta.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Fisica con 10</p>
+                            <p> (Nivel: 2do de Secundaria)</p>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">El gran penacho</h2>
+                            <img src="img/penacho.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Historia de Mexico</p>
+                            <p> (Nivel: 2do de Primaria)</p>
+                        </div>
+                    </div>
+                    <div class="materiasC">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Gorra Talent Hackathon 2022</h2>
+                            <img src="img/gorra.png" alt="Traje de astronauta">
+                            <p>Consiguelo por el evento de Talent Hackathon 2022</p>
+                            <p> (Nivel: Externo)</p>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Gorra The Wizards</h2>
+                            <img src="img/gorraWizards.png" alt="Traje de astronauta">
+                            <p>Consiguelo siendo parte del grupo The Wizards</p>
+                            <p> (Nivel: Externo)</p>
+                        </div>
+                    </div>
+                    <div class="materiasC">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Ajolote Celestial</h2>
+                            <img src="img/ajolote.png" alt="Traje de astronauta">
+                            <p>Consiguelo terminando Secundaria</p>
+                            <p> (Nivel: Secundaria)</p>
+                        </div>
+                    </div>
+                    <div class="materiasC"></div>
+                </div>
+                <ul class="puntos">
+                    <li onclick="deslizaAtrasC()"class="punto"></li>
+                    <li onclick="deslizaAdelanteC()"class="punto"></li>
+                </ul>
+            </div>
+            <div class="Carrucel">
+                <h2>Escenario que podrias conseguir</h2>
+                <div class="grande" id="escenarios">
+                    <div class="materias" id="distE">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Bellas Artes</h2>
+                            <img src="img/BellasArtes.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Geografia III</p>
+                            <p> (Nivel: 3ro de Primaria)</p>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Unidos</h2>
+                            <img src="img/Union.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Formacion Civica V</p>
+                            <p> (Nivel: 5to de Primaria)</p>
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Mundo Magico</h2>
+                            <img src="img/biblioteca.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Español I con 10</p>
+                            <p> (Nivel: 1ro de Primaria)</p>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Nuevo Mundo</h2>
+                            <img src="img/mundo.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Matematicas II</p>
+                            <p> (Nivel: 2do de Secundaria)</p>
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Gran Selva</h2>
+                            <img src="img/bio.png" alt="Traje de astronauta">
+                            <p>Consiguelo completando Biologia</p>
+                            <p> (Nivel: 1ro de Secundaria)</p>
+                        </div>
+                        <div class="Clase1">
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                        </div>
+                        <div class="Clase1">
+                        </div>
+                    </div>
+                </div>
+                <ul class="puntos">
+                    <li onclick="Atras()" id="Atras" class="punto"></li>
+                    <li onclick="Adelante()" id="Adelante" class="punto"></li>
+                </ul>
+            </div>
+            <div class="Dudas_Avatar">
+                <div class="TamD">
+                    <h2>¿Tienes dudas?</h2>
+                    <p>Conectate con un tutor para resolver tus dudas de manera personal</p>
+                    <div class="campo campoC">
+                        <a href="error404.html"><input type="submit" value="Buscar tutor" class="boton boton--primario" id="BuscarTutor"></a>
+                    </div>
+                </div>
+                <div class="Avatar centrar-texto">
+                    <h2>¡Tu Avatar!</h2>
+                    <div class="avat">
+                        <img class="fondo" src="img/BellasArtes.png" alt="Imagen de tu avatar">
+                        <img class="Niño" src="img/niño1wizard.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-----------------------Footer----------------------->
+        <div class="contenedor">
+            <div class="empresas">
+                <h3>Empresas y grupos de apollo</h3>
+                <img src="img/empresas.png" alt="Empresas y grupos de apollo">
+            </div>
+            <div class="inf">
+                <img src="img/LogoLetras1.png" alt="logo de la pagina">
+                <a class="tc" href="https://azure.microsoft.com/es-es/support/legal/">Terminos y condiciones</a>
+            </div>
+            <p>Todos los derechos reservados a The Wizards</p>
+        </div>
+    </footer> <!-----------------------Fin Footer----------------------->
+
+    <script src="scripts.js"></script>

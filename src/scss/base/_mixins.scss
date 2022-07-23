@@ -1,0 +1,51 @@
+@use "variables" as Variables;
+
+//-----------Creando un Mixins para "Media Queries"-----------
+
+@mixin Telefono {
+    @media (min-width: 480px) {
+        @content; //Remplaza lo que este entre las llaves al momento de usar
+    }
+}
+
+@mixin Tablet {
+    @media (min-width: 768px) {
+        @content; //Remplaza lo que este entre las llaves al momento de usar
+    }
+}
+
+@mixin Desktop {
+    @media (min-width: 992px) {
+        @content; //Remplaza lo que este entre las llaves al momento de usar
+    }
+}
+
+@mixin TabletP {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin TelefonoP {
+    @media screen and (max-width: 385px){
+        @content;
+    }
+}
+
+@mixin Especial {
+    @media screen and (min-width: 1175px){
+        @content;
+    }
+}
+
+@mixin TelefonoPequeño {
+    @media (max-width: 450px){
+        @content;
+    }
+}
+
+@mixin grid($Columnas, $Espacio) {
+    display: grid;
+    grid-template-columns: repeat($Columnas, 1fr);
+    gap: $Espacio;
+}

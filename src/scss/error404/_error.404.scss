@@ -1,0 +1,37 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+@include Mixins.Tablet {
+    .Error404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .imgen{  
+        margin-right: 5%
+    }
+}
+
+@include Mixins.TabletP {
+    .imgen{
+        margin: 0 auto;
+    }
+}
+
+.Error404{
+    border-radius: 5rem;
+    background-color: #9141b2;
+}
+
+.texto{
+    color: Variables.$Blanco;
+    margin-left: 5%;
+    p{
+        color: Variables.$Blanco;
+    }
+}
+
+.imgen{
+    width: 50%;
+}

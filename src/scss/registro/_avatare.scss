@@ -1,0 +1,52 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+@include Mixins.Tablet {
+    .Avatares__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80rem;
+        gap: 20rem;
+        margin: 0 auto;
+    }
+
+    .Avatares__img--M:hover{
+        img{
+            width: 100rem; //Atributos a Cambiar
+        }
+        
+    }
+    
+    .Avatares__img--F:hover{
+        img{
+            width: 100rem; //Atributos a Cambiar
+        }
+        
+    }
+}
+
+@include Mixins.TabletP {
+    .Avatares__img{
+        width: 30rem;
+        margin: 0 auto;
+    }
+    
+    .Avatares__img--M,
+    .Avatares__img--F{
+        img{
+            width: 27rem;
+        }
+    }
+
+    .Avatares{
+        h1{
+            font-size: 5rem;
+        }
+    }
+}
+
+
+.separacion{
+    margin-top: 9rem;
+}

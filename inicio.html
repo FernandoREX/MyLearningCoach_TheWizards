@@ -1,0 +1,206 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmecac</title>
+
+    <script src="https://kit.fontawesome.com/10644d5fcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;400;700&family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-----------------------Header----------------------->
+    <div class="colorHh">
+        <header class="header contenedor" id="header" >
+            <div>
+                <div class="Navegacion">
+                    <div class="NavegacionImg">
+                        <a href="index.html"><img src="img/LogoLetras.png" alt="Logo de Calmecac"></a>
+                    </div>
+                    <nav class="NavegacionNav" id="Nav">
+                        <ul>
+                            <li><a href="inicio.html" class="NavegacionNav__enlace">Mi Perfíl</a></li>
+                            <li><a href="error404.html" class="NavegacionNav__enlace">Mis Profesores</a></li>
+                            <li><a href="error404.html" class="NavegacionNav__enlace">Tutorias</a></li>
+                            <li><a href="index.html" class="NavegacionNav__enlace">Cerrar Sesión</a></li>
+                            <li><a href="galeria.html" class="NavegacionNav__enlace">Logros y Avatares</a></li>
+                        </ul>
+                    </nav>
+    
+                    <div onclick="mostrar_menu()" class="btn__menu" id="btn_menu" ><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+        </header> 
+    </div><!-----------------------Fin Header----------------------->
+
+    <main class="MAIN recorte">
+        <div class="contenedor colorTexto">
+            <div class="Textos">
+                <h2>!Hola!, Fernando</h2>
+                <p>Bienvenido a la plataforma educativa donde te ayudara a mejorar en tu educacion</p>
+                <p>Enfocada a 2do año de secundaria 🧪</p>
+            </div>
+            <div class="Carrucel">
+                <h2>Clases disponibles para ti</h2>
+                <div class="grande">
+                    <div class="materias">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Español II</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC wow">
+                                <a href="#" id="IncribirmeEspañoll"><input onclick="AgregarClasesEspa()" type="submit" value="Inscribirme" class="boton boton--primario" id="IncribirmeEspañol"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Ingles II</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC">
+                                <a href="#"><input type="submit" value="Inscribirme" class="boton boton--primario" id="Incribirme"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Matematicas II</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC">
+                                <a href="#"><input onclick="AgregarClasesIngles()" type="submit" value="Inscribirme" class="boton boton--primario" id="IncribirmeEspañol"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Fisica</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC">
+                                <a href="#"><input type="submit" value="Inscribirme" class="boton boton--primario" id="Incribirme"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Historia II</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC">
+                                <a href="#"><input type="submit" value="Inscribirme" class="boton boton--primario" id="Incribirme"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Civica y Etica II</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC">
+                                <a href="#"><input type="submit" value="Inscribirme" class="boton boton--primario" id="Incribirme"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="materias">
+                        <div class="Clase1">
+                            <h2 class="centrar-texto">Tecnologia II</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Pariatur minus delectus sapiente hic! Nostrum iste perferendis 
+                                quibusdam natus ullam, magni numquam quaerat recusandae! 
+                                Nam temporibus eligendi cum eos repudiandae nostrum.
+                            </p>
+                            <div class="campo campoC">
+                                <a href="#"><input type="submit" value="Inscribirme" class="boton boton--primario" id="Incribirme"></a>
+                                <a href="#"><input type="submit" value="Examen Diagnostico" class="boton boton--primario" id="ExamenD"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="puntos">
+                    <li onclick="deslizaAtras()" id="Atras" class="punto"></li>
+                    <li onclick="deslizaAdelante()" id="Adelante" class="punto"></li>
+                </ul>
+            </div>
+            <div class="CarrucelClases">
+                <h2>Tus Clases</h2>
+                <div class="grandeC">
+                    <div class="materiasC">
+                        
+                    </div>
+                    <div class="materiasC"><p>hola</p></div>
+                    <div class="materiasC"><p>hola</p></div>
+                    <div class="materiasC"><p>hola</p></div>
+                </div>
+                <ul class="puntos">
+                    <li onclick="deslizaAtrasC()"class="punto"></li>
+                    <li onclick="deslizaAdelanteC()"class="punto"></li>
+                </ul>
+            </div>
+            <div class="Dudas_Avatar">
+                <div class="TamD">
+                    <h2>¿Tienes dudas?</h2>
+                    <p>Conectate con un tutor para resolver tus dudas de manera personal</p>
+                    <div class="campo campoC">
+                        <a href="error404.html"><input type="submit" value="Buscar tutor" class="boton boton--primario" id="BuscarTutor"></a>
+                    </div>
+                </div>
+                <div class="Avatar centrar-texto">
+                    <h2>¡Tu Avatar!</h2>
+                    <div class="avat">
+                        <img class="fondo" src="img/BellasArtes.png" alt="Imagen de tu avatar">
+                        <img class="Niño" src="img/niño1wizard.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-----------------------Footer----------------------->
+        <div class="contenedor">
+            <div class="empresas">
+                <h3>Empresas y grupos de apollo</h3>
+                <img src="img/empresas.png" alt="Empresas y grupos de apollo">
+            </div>
+            <div class="inf">
+                <img src="img/LogoLetras1.png" alt="logo de la pagina">
+                <a class="tc" href="https://azure.microsoft.com/es-es/support/legal/">Terminos y condiciones</a>
+            </div>
+            <p>Todos los derechos reservados a The Wizards</p>
+        </div>
+    </footer> <!-----------------------Fin Footer----------------------->
+
+    <script src="scripts.js"></script>

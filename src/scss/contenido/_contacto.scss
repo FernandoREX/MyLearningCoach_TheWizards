@@ -1,0 +1,60 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+.contacto{
+    background: rgb(98,14,235);
+    background: linear-gradient(0deg, rgba(98,14,235,1) 0%, rgba(41,158,191,1) 100%);
+    padding-bottom: 5rem;
+}
+
+.formulario{
+    background-color: Variables.$Blanco;
+    margin: 0 auto;
+    width: 95%;
+    padding: 5rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+}
+
+.centrar-texto{
+    color: Variables.$Blanco;
+    font-size: 5rem;
+}
+
+.campo{
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+@include Mixins.Tablet {
+    .campo{
+        display: flex;
+    }
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid Variables.$GrisClaro;
+    right: 1rem;
+}
+
+@include Mixins.TelefonoP {
+    .campo__field{
+        width: 20rem;
+    }
+}
+
+.campo__field--textarea{
+    height: 20rem;
+}
+
+.Titulo{
+    h3{
+        margin-bottom: 5rem;
+    }
+}

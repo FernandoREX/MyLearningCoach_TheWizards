@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmecac</title>
+
+    <script src="https://kit.fontawesome.com/10644d5fcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;400;700&family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-----------------------Header----------------------->
+    <div class="colorHh">
+        <header class="header contenedor" id="header" >
+            <div>
+                <div class="Navegacion">
+                    <div class="NavegacionImg">
+                        <a href="index.html"><img src="img/LogoLetras.png" alt="Logo de Calmecac"></a>
+                    </div>
+                    <nav class="NavegacionNav" id="Nav">
+                        <ul>
+                            <li><a href="index.html" class="NavegacionNav__enlace">Inicio</a></li>
+                            <li><a onclick="enlace1()" href="index.html" class="NavegacionNav__enlace">Contactos</a></li>
+                            <li><a href="https://www.planyprogramasdestudio.sep.gob.mx/" class="NavegacionNav__enlace">Planes de Estudio</a></li>
+                            <li><a onclick="enlace1()" href="index.html" class="NavegacionNav__enlace">Más Información</a></li>
+                            <li class="Rellenar"><a href="InicioSesion.html" class="NavegacionNav__enlace">Iniciar Sesión</a></li>
+                            <li class="Rellenar"><a href="Registro.html" class="NavegacionNav__enlace">Registrarse</a></li>
+                        </ul>
+                    </nav>
+    
+                    <div onclick="mostrar_menu()" class="btn__menu" id="btn_menu" ><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+        </header> 
+    </div><!-----------------------Fin Header----------------------->
+
+    <main class="MAIN">
+        <div class="contenedor">
+            <div class="Avatares">
+                <h1 class="centrar-texto">Selecciona a tu Avatar</h1>
+                <div class="Avatares__img">
+                    <div class="Avatares__img--M">
+                        <input type="radio" name="AvatarM" value="1">
+                        <img src="img/niño1.png" alt="Avatar Masculino">
+                    </div>
+                    <div class="Avatares__img--F">
+                        <input type="radio" name="AvatarM" value="2">
+                        <img src="img/niña1.png" alt="Avatar Femenino">
+                    </div>
+                </div>
+                <div class="campo campoC separacion">
+                    <a href="Registro_Estudiante.html"><input type="submit" value="Atrás" class="boton boton--primario" id="Atras"></a>
+                    <a href="inicio.html"><input type="submit" value="Registrarse" class="boton boton--primario" id="SeleccionAvatar"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-----------------------Footer----------------------->
+        <div class="contenedor">
+            <div class="empresas">
+                <h3>Empresas y grupos de apollo</h3>
+                <img src="img/empresas.png" alt="Empresas y grupos de apollo">
+            </div>
+            <div class="inf">
+                <img src="img/LogoLetras1.png" alt="logo de la pagina">
+                <a class="tc" href="https://azure.microsoft.com/es-es/support/legal/">Terminos y condiciones</a>
+            </div>
+            <p>Todos los derechos reservados a The Wizards</p>
+        </div>
+    </footer> <!-----------------------Fin Footer----------------------->
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+.RegistroArticulo{
+    background-color: Variables.$AzulP;
+    color: Variables.$Blanco;
+    padding: 5rem;
+}
+
+@include Mixins.Tablet {
+    .Diseño{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0rem;
+    }
+}
+.Diseño{
+    padding-top: 5rem;
+}
+
+@include Mixins.TabletP {
+    .RegistroArticulo__img{
+        display: none;
+    }
+}
+
+.RegistroArticulo__text{
+    p{
+        color: Variables.$Blanco;
+    }
+}

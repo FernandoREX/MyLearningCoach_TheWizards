@@ -1,0 +1,35 @@
+@use "../base/variables" as Variables;
+@use "../base/mixins" as Mixins;
+
+@include Mixins.Tablet {
+    .DatosRegistro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        color: Variables.$Blanco ;
+    }
+    
+}
+
+.DatosRegistro{
+    color: Variables.$Blanco ;
+}
+
+.tamañoG{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.campoC{
+    input{
+        cursor: pointer;
+    }
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tamT{
+    margin-top: -2rem;
+    font-size: 1.5rem;
+}
